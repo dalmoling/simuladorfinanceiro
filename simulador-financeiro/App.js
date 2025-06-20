@@ -5,7 +5,6 @@ import { PieChart } from 'react-native-chart-kit';
 import { FontAwesome5, MaterialIcons, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { Card, Button, Divider, ProgressBar, Provider as PaperProvider, DefaultTheme } from 'react-native-paper';
 
-// Tema personalizado com cores mais vibrantes
 const theme = {
   ...DefaultTheme,
   colors: {
@@ -16,15 +15,12 @@ const theme = {
   },
 };
 
-// Obter dimensões da tela
 const { width } = Dimensions.get('window');
 
 export default function App() {
-  // Estados para a estratégia 50/30/20
   const [rendaMensal, setRendaMensal] = useState('');
   const [estrategiaResultado, setEstrategiaResultado] = useState(null);
   
-  // Referência para o ScrollView
   const scrollViewRef = useRef(null);
   
   const calcularEstrategia = () => {
@@ -45,7 +41,6 @@ export default function App() {
       investimentos: investimentos.toFixed(2)
     });
     
-    // Rolar para baixo para mostrar os resultados
     setTimeout(() => {
       scrollViewRef.current?.scrollToEnd({ animated: true });
     }, 100);
