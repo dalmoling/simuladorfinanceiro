@@ -1,5 +1,5 @@
-# Simulador 50/30/20 Utilizando Expo Router conforme ensinado nas aulas
-## Interface do usuário:
+# Simulador 50/30/20 Utilizando Expo Router 
+## Interface do usuário ao iniciar o APP:
 ![image](https://github.com/user-attachments/assets/09a44ff4-10b7-47cb-ab09-78d145f809f0)
 
 ## Após digitar o valor e calcular:
